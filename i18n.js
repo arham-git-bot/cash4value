@@ -9,7 +9,7 @@
     en: {
       'a11y.skip': 'Skip to content',
       'meta.title': 'Cash4Value — Turn Your Valuables Into Instant Cash',
-      'meta.desc': 'Need cash urgently? Cash4Value buys your valuable items quickly at fair market prices — electronics, gold, jewelry, watches, laptops and more. Transparent, secure, and fast. Get a free offer today.',
+      'meta.desc': 'Need cash urgently? Cash4Value buys mobile phones and small gold & silver items like rings and chains — quickly, at fair market prices. Transparent, secure, and fast. Get a free offer today.',
 
       'topbar.badge': 'Fast, fair, and confidential valuations — usually within the hour.',
 
@@ -32,7 +32,7 @@
       'hero.card.est': 'Estimated offer',
       'hero.card.fair': 'Fair market value · 82% of retail',
       'hero.card.item': 'Item',
-      'hero.card.itemVal': 'Luxury Watch',
+      'hero.card.itemVal': 'Mobile Phone',
       'hero.card.cond': 'Condition',
       'hero.card.condVal': 'Excellent',
       'hero.card.payout': 'Payout',
@@ -59,8 +59,11 @@
       'how.cta': 'Start Your Valuation',
 
       'buy.eyebrow': 'What we buy',
-      'buy.title': 'A wide range of valuables welcome',
-      'buy.sub': "These are examples of the categories we accept — not products for sale. If you own it and it holds value, we'll happily take a look.",
+      'buy.title': 'We buy mobile phones, gold & silver',
+      'buy.sub': "We focus on what we value best — mobile phones and small gold & silver items like rings and chains. Have one of these? We'd love to make you an offer.",
+
+      'cat.mobile': 'Mobile Phones',           'catd.mobile': 'All brands & models — new or used',
+      'cat.goldsilver': 'Gold & Silver',       'catd.goldsilver': 'Rings, chains & small ornaments',
 
       'cat.electronics': 'Electronics',        'catd.electronics': 'Tablets, TVs, audio & smart devices',
       'cat.gold': 'Gold & Jewelry',            'catd.gold': 'Ornaments, silver & fine pieces',
@@ -91,7 +94,7 @@
       'faq.title': 'Questions, answered',
       'faq.sub': 'Everything you need to know before reaching out.',
       'faq.q1': 'What items do you buy?',
-      'faq.a1': "A broad range of valuables — including electronics, gold and silver, jewelry, luxury watches, laptops, smartphones, cameras, gaming gear, appliances, musical instruments, collectibles, and more. If you're unsure, just ask; we're happy to take a look.",
+      'faq.a1': "Right now we focus on two things: mobile phones (all brands and models, new or used) and small gold & silver items such as rings and chains. If you're unsure whether yours qualifies, just ask — we're happy to take a look.",
       'faq.q2': 'How quickly will I receive payment?',
       'faq.a2': 'Most offers are made within the hour, and once you accept, we aim to pay you the same day. Timing can vary slightly depending on the item and your preferred payment method.',
       'faq.q3': 'Is there any obligation?',
@@ -166,7 +169,7 @@
     hi: {
       'a11y.skip': 'सामग्री पर जाएं',
       'meta.title': 'Cash4Value — अपनी कीमती चीज़ों को तुरंत नकद में बदलें',
-      'meta.desc': 'तुरंत पैसों की ज़रूरत है? Cash4Value आपकी कीमती चीज़ें — इलेक्ट्रॉनिक्स, सोना, आभूषण, घड़ियाँ, लैपटॉप और बहुत कुछ — उचित बाज़ार भाव पर जल्दी खरीदता है। पारदर्शी, सुरक्षित और तेज़। आज ही मुफ़्त ऑफ़र पाएं।',
+      'meta.desc': 'तुरंत पैसों की ज़रूरत है? Cash4Value मोबाइल फ़ोन और छोटी सोने-चांदी की चीज़ें जैसे अंगूठियाँ और चेन — उचित बाज़ार भाव पर जल्दी खरीदता है। पारदर्शी, सुरक्षित और तेज़। आज ही मुफ़्त ऑफ़र पाएं।',
 
       'topbar.badge': 'तेज़, निष्पक्ष और गोपनीय मूल्यांकन — आमतौर पर एक घंटे के भीतर।',
 
@@ -189,7 +192,7 @@
       'hero.card.est': 'अनुमानित ऑफ़र',
       'hero.card.fair': 'उचित बाज़ार मूल्य · खुदरा का 82%',
       'hero.card.item': 'वस्तु',
-      'hero.card.itemVal': 'लक्ज़री घड़ी',
+      'hero.card.itemVal': 'मोबाइल फ़ोन',
       'hero.card.cond': 'स्थिति',
       'hero.card.condVal': 'उत्कृष्ट',
       'hero.card.payout': 'भुगतान',
@@ -216,8 +219,11 @@
       'how.cta': 'अपना मूल्यांकन शुरू करें',
 
       'buy.eyebrow': 'हम क्या खरीदते हैं',
-      'buy.title': 'कई तरह की कीमती चीज़ों का स्वागत है',
-      'buy.sub': 'ये उन श्रेणियों के उदाहरण हैं जिन्हें हम स्वीकार करते हैं — बिक्री के लिए उत्पाद नहीं। अगर वह आपके पास है और उसकी कोई कीमत है, तो हम खुशी से देखेंगे।',
+      'buy.title': 'हम मोबाइल फ़ोन, सोना और चांदी खरीदते हैं',
+      'buy.sub': 'हम उसी पर ध्यान देते हैं जिसका हम सबसे अच्छा मूल्य देते हैं — मोबाइल फ़ोन और छोटी सोने-चांदी की चीज़ें जैसे अंगूठियाँ और चेन। क्या आपके पास इनमें से कुछ है? हमें आपको ऑफ़र देने में खुशी होगी।',
+
+      'cat.mobile': 'मोबाइल फ़ोन',             'catd.mobile': 'सभी ब्रांड और मॉडल — नए या पुराने',
+      'cat.goldsilver': 'सोना और चांदी',        'catd.goldsilver': 'अंगूठियाँ, चेन और छोटे आभूषण',
 
       'cat.electronics': 'इलेक्ट्रॉनिक्स',       'catd.electronics': 'टैबलेट, टीवी, ऑडियो और स्मार्ट डिवाइस',
       'cat.gold': 'सोना और आभूषण',              'catd.gold': 'आभूषण, चांदी और बेहतरीन चीज़ें',
@@ -248,7 +254,7 @@
       'faq.title': 'सवालों के जवाब',
       'faq.sub': 'संपर्क करने से पहले जो कुछ भी आपको जानना चाहिए।',
       'faq.q1': 'आप कौन-सी चीज़ें खरीदते हैं?',
-      'faq.a1': 'कई तरह की कीमती चीज़ें — इलेक्ट्रॉनिक्स, सोना-चांदी, आभूषण, लक्ज़री घड़ियाँ, लैपटॉप, स्मार्टफ़ोन, कैमरे, गेमिंग सामान, उपकरण, वाद्य यंत्र, संग्रहणीय वस्तुएं और बहुत कुछ। अगर आप निश्चित नहीं हैं, तो बस पूछें; हम खुशी से देखेंगे।',
+      'faq.a1': 'अभी हम दो चीज़ों पर ध्यान देते हैं: मोबाइल फ़ोन (सभी ब्रांड और मॉडल, नए या पुराने) और छोटी सोने-चांदी की चीज़ें जैसे अंगूठियाँ और चेन। अगर आप निश्चित नहीं हैं कि आपकी चीज़ मान्य है या नहीं, तो बस पूछें — हम खुशी से देखेंगे।',
       'faq.q2': 'मुझे कितनी जल्दी भुगतान मिलेगा?',
       'faq.a2': 'ज़्यादातर ऑफ़र एक घंटे के भीतर दिए जाते हैं, और स्वीकार करने के बाद हम उसी दिन भुगतान करने का लक्ष्य रखते हैं। समय वस्तु और आपके पसंदीदा भुगतान तरीके के आधार पर थोड़ा भिन्न हो सकता है।',
       'faq.q3': 'क्या कोई बाध्यता है?',
@@ -323,7 +329,7 @@
     mr: {
       'a11y.skip': 'मजकुराकडे जा',
       'meta.title': 'Cash4Value — तुमच्या मौल्यवान वस्तूंचे त्वरित रोखीत रूपांतर करा',
-      'meta.desc': 'तातडीने पैशांची गरज आहे? Cash4Value तुमच्या मौल्यवान वस्तू — इलेक्ट्रॉनिक्स, सोने, दागिने, घड्याळे, लॅपटॉप आणि बरेच काही — योग्य बाजारभावाने लवकर खरेदी करते. पारदर्शक, सुरक्षित आणि जलद. आजच मोफत ऑफर मिळवा.',
+      'meta.desc': 'तातडीने पैशांची गरज आहे? Cash4Value मोबाइल फोन आणि अंगठ्या व चेन यांसारख्या लहान सोने-चांदीच्या वस्तू — योग्य बाजारभावाने लवकर खरेदी करते. पारदर्शक, सुरक्षित आणि जलद. आजच मोफत ऑफर मिळवा.',
 
       'topbar.badge': 'जलद, न्याय्य आणि गोपनीय मूल्यांकन — सहसा एका तासाच्या आत.',
 
@@ -346,7 +352,7 @@
       'hero.card.est': 'अंदाजे ऑफर',
       'hero.card.fair': 'योग्य बाजारमूल्य · किरकोळचे 82%',
       'hero.card.item': 'वस्तू',
-      'hero.card.itemVal': 'लक्झरी घड्याळ',
+      'hero.card.itemVal': 'मोबाइल फोन',
       'hero.card.cond': 'स्थिती',
       'hero.card.condVal': 'उत्कृष्ट',
       'hero.card.payout': 'पैसे',
@@ -373,8 +379,11 @@
       'how.cta': 'तुमचे मूल्यांकन सुरू करा',
 
       'buy.eyebrow': 'आम्ही काय खरेदी करतो',
-      'buy.title': 'विविध प्रकारच्या मौल्यवान वस्तूंचे स्वागत',
-      'buy.sub': 'या आम्ही स्वीकारत असलेल्या श्रेणींची उदाहरणे आहेत — विक्रीसाठीची उत्पादने नाहीत. ती तुमच्याकडे असेल आणि तिचे मूल्य असेल, तर आम्ही आनंदाने पाहू.',
+      'buy.title': 'आम्ही मोबाइल फोन, सोने आणि चांदी खरेदी करतो',
+      'buy.sub': 'आम्ही ज्याचे सर्वोत्तम मूल्य देतो त्यावरच लक्ष केंद्रित करतो — मोबाइल फोन आणि अंगठ्या व चेन यांसारख्या लहान सोने-चांदीच्या वस्तू. यापैकी काही तुमच्याकडे आहे? आम्हाला तुम्हाला ऑफर द्यायला आवडेल.',
+
+      'cat.mobile': 'मोबाइल फोन',             'catd.mobile': 'सर्व ब्रँड आणि मॉडेल — नवीन किंवा वापरलेले',
+      'cat.goldsilver': 'सोने आणि चांदी',       'catd.goldsilver': 'अंगठ्या, चेन आणि लहान दागिने',
 
       'cat.electronics': 'इलेक्ट्रॉनिक्स',       'catd.electronics': 'टॅबलेट, टीव्ही, ऑडिओ आणि स्मार्ट डिव्हाइस',
       'cat.gold': 'सोने आणि दागिने',            'catd.gold': 'दागिने, चांदी आणि उत्तम वस्तू',
@@ -405,7 +414,7 @@
       'faq.title': 'प्रश्नांची उत्तरे',
       'faq.sub': 'संपर्क साधण्यापूर्वी तुम्हाला माहीत असावे असे सर्व काही.',
       'faq.q1': 'तुम्ही कोणत्या वस्तू खरेदी करता?',
-      'faq.a1': 'विविध प्रकारच्या मौल्यवान वस्तू — इलेक्ट्रॉनिक्स, सोने-चांदी, दागिने, लक्झरी घड्याळे, लॅपटॉप, स्मार्टफोन, कॅमेरे, गेमिंग साहित्य, उपकरणे, वाद्ये, संग्रहणीय वस्तू आणि बरेच काही. खात्री नसल्यास फक्त विचारा; आम्ही आनंदाने पाहू.',
+      'faq.a1': 'सध्या आम्ही दोन गोष्टींवर लक्ष केंद्रित करतो: मोबाइल फोन (सर्व ब्रँड आणि मॉडेल, नवीन किंवा वापरलेले) आणि अंगठ्या व चेन यांसारख्या लहान सोने-चांदीच्या वस्तू. तुमची वस्तू पात्र आहे की नाही याची खात्री नसल्यास फक्त विचारा — आम्ही आनंदाने पाहू.',
       'faq.q2': 'मला किती लवकर पैसे मिळतील?',
       'faq.a2': 'बहुतेक ऑफर एका तासाच्या आत दिल्या जातात, आणि तुम्ही स्वीकारल्यावर आम्ही त्याच दिवशी पैसे देण्याचे उद्दिष्ट ठेवतो. वेळ वस्तू आणि तुमच्या पसंतीच्या पेमेंट पद्धतीनुसार थोडा बदलू शकतो.',
       'faq.q3': 'काही बंधन आहे का?',
