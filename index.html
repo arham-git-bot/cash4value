@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0A3D33" />
+
+  <!-- Primary SEO -->
+  <title>Cash4Value — Turn Your Valuables Into Instant Cash</title>
+  <meta name="description" content="Need cash urgently? Cash4Value buys your valuable items quickly at fair market prices — electronics, gold, jewelry, watches, laptops and more. Transparent, secure, and fast. Get a free offer today." />
+  <meta name="keywords" content="sell items for cash, urgent cash, instant cash offer, sell gold, sell electronics, sell laptop, fair valuation, Cash4Value" />
+  <meta name="author" content="Cash4Value" />
+  <link rel="canonical" href="https://cash4value.example/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cash4Value — Turn Your Valuables Into Instant Cash" />
+  <meta property="og:description" content="Need money urgently? We buy your valuables quickly at fair prices. Transparent, secure, and fast." />
+  <meta property="og:site_name" content="Cash4Value" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A3D33'/%3E%3Cpath d='M16 7l7 4v6c0 4.2-3 7-7 8-4-1-7-3.8-7-8v-6z' fill='none' stroke='%23D9B676' stroke-width='2'/%3E%3Cpath d='M12.5 16.5l2.5 2.5 4.5-5' fill='none' stroke='%23D9B676' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+  <!-- Fonts (Latin + Devanagari for Hindi/Marathi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '"Noto Sans Devanagari"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', '"Noto Sans Devanagari"', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            ink: '#0B1F1A',
+            brand: {
+              50:  '#EAF6F1', 100: '#CFEBE0', 200: '#A2D8C4', 300: '#6DBFA3',
+              400: '#3FA284', 500: '#1E8468', 600: '#0F6E5A', 700: '#0A5546',
+              800: '#0A3D33', 900: '#082C25',
+            },
+            gold: { 300: '#E7CE97', 400: '#D9B676', 500: '#CBA35C', 600: '#B08843' },
+            canvas: '#F6FBF9',
+          },
+          boxShadow: {
+            soft: '0 1px 2px rgba(10,61,51,0.04), 0 12px 32px -12px rgba(10,61,51,0.16)',
+            lift: '0 24px 60px -20px rgba(10,61,51,0.28)',
+            glow: '0 0 0 1px rgba(217,182,118,0.25), 0 20px 50px -18px rgba(203,163,92,0.35)',
+          },
+          borderRadius: { '4xl': '2rem' },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Cash4Value",
+    "description": "Cash4Value buys valuable items quickly at fair prices for people who need urgent cash, and helps customers source specific items through a trusted network.",
+    "areaServed": "Local & Nationwide",
+    "priceRange": "Fair market valuation"
+  }
+  </script>
+</head>
+
+<body class="bg-canvas text-ink font-sans antialiased selection:bg-gold-400/30">
+
+  <!-- ============ SKIP LINK ============ -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-lg focus:bg-brand-800 focus:px-4 focus:py-2 focus:text-white" data-i18n="a11y.skip">Skip to content</a>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="hidden md:block bg-brand-900 text-brand-100 text-sm">
+    <div class="mx-auto max-w-7xl px-6 py-2 flex items-center justify-center">
+      <p class="flex items-center gap-2">
+        <span class="inline-block h-1.5 w-1.5 rounded-full bg-gold-400 animate-pulse"></span>
+        <span data-i18n="topbar.badge">Fast, fair, and confidential valuations — usually within the hour.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header id="navbar" class="sticky top-0 z-50 transition-all duration-300">
+    <nav class="mx-auto max-w-7xl px-6" aria-label="Primary">
+      <div class="nav-inner mt-3 flex items-center justify-between rounded-2xl border border-white/40 bg-white/70 px-4 py-3 shadow-soft backdrop-blur-xl transition-all duration-300">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2.5 group" aria-label="Cash4Value home">
+          <span class="grid h-10 w-10 place-items-center rounded-xl bg-brand-800 shadow-inner">
+            <svg viewBox="0 0 32 32" class="h-6 w-6" aria-hidden="true">
+              <path d="M16 6l8 4.5v6.8c0 4.8-3.4 8-8 9.2-4.6-1.2-8-4.4-8-9.2v-6.8z" fill="none" stroke="#D9B676" stroke-width="2"/>
+              <path d="M11.5 16.5l3 3 5.5-6.2" fill="none" stroke="#D9B676" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="font-display text-xl font-extrabold tracking-tight text-ink">
+            Cash<span class="text-brand-600">4</span>Value
+          </span>
+        </a>
+
+        <!-- Desktop links -->
+        <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-ink/70">
+          <a href="#how" class="hover:text-brand-700 transition" data-i18n="nav.how">How It Works</a>
+          <a href="#what-we-buy" class="hover:text-brand-700 transition" data-i18n="nav.what">What We Buy</a>
+          <a href="#why" class="hover:text-brand-700 transition" data-i18n="nav.why">Why Us</a>
+          <a href="#faq" class="hover:text-brand-700 transition" data-i18n="nav.faq">FAQ</a>
+        </div>
+
+        <!-- Right cluster -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Language switcher -->
+          <div class="relative" id="langWrap">
+            <button id="langBtn" type="button" class="inline-flex items-center gap-1.5 rounded-xl border border-ink/10 bg-white/60 px-3 py-2.5 text-sm font-semibold text-ink/70 transition hover:border-brand-300 hover:text-brand-700" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18zm0 0c2.5 0 4-4 4-9s-1.5-9-4-9-4 4-4 9 1.5 9 4 9zM3.5 9h17M3.5 15h17"/></svg>
+              <span id="langCurrent">EN</span>
+              <svg class="h-3.5 w-3.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="langMenu" class="hidden absolute right-0 mt-2 w-44 rounded-2xl border border-ink/10 bg-white p-1.5 shadow-lift z-50">
+              <button type="button" class="lang-opt" data-lang="en">English</button>
+              <button type="button" class="lang-opt" data-lang="hi">हिंदी <span class="lang-sub">Hindi</span></button>
+              <button type="button" class="lang-opt" data-lang="mr">मराठी <span class="lang-sub">Marathi</span></button>
+            </div>
+          </div>
+
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 rounded-xl bg-brand-700 px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-800 hover:-translate-y-0.5">
+            <span data-i18n="nav.cta">Get an Offer</span>
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
+          </a>
+          <!-- Mobile toggle -->
+          <button id="menuBtn" class="lg:hidden grid h-10 w-10 place-items-center rounded-xl border border-ink/10 bg-white/60 text-ink" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <svg id="menuIcon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="lg:hidden hidden mx-auto max-w-7xl px-6">
+      <div class="mt-2 rounded-2xl border border-white/50 bg-white/90 p-4 shadow-lift backdrop-blur-xl">
+        <div class="flex flex-col text-base font-medium text-ink/80">
+          <a href="#how" class="rounded-xl px-3 py-3 hover:bg-brand-50" data-i18n="nav.how">How It Works</a>
+          <a href="#what-we-buy" class="rounded-xl px-3 py-3 hover:bg-brand-50" data-i18n="nav.what">What We Buy</a>
+          <a href="#why" class="rounded-xl px-3 py-3 hover:bg-brand-50" data-i18n="nav.why">Why Us</a>
+          <a href="#faq" class="rounded-xl px-3 py-3 hover:bg-brand-50" data-i18n="nav.faq">FAQ</a>
+          <a href="#contact" class="mt-2 rounded-xl bg-brand-700 px-3 py-3 text-center font-semibold text-white" data-i18n="nav.mobileCta">Need Cash Urgently? Contact Us</a>
+
+          <!-- Mobile language switcher -->
+          <div class="mt-4 border-t border-ink/5 pt-3">
+            <p class="px-3 pb-2 text-xs font-semibold uppercase tracking-wider text-ink/40" data-i18n="nav.language">Language</p>
+            <div class="grid grid-cols-3 gap-2">
+              <button type="button" class="lang-opt justify-center" data-lang="en">English</button>
+              <button type="button" class="lang-opt justify-center" data-lang="hi">हिंदी</button>
+              <button type="button" class="lang-opt justify-center" data-lang="mr">मराठी</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0 -z-10">
+        <div class="absolute -top-32 -left-24 h-96 w-96 rounded-full bg-brand-300/30 blur-3xl"></div>
+        <div class="absolute top-24 -right-24 h-[28rem] w-[28rem] rounded-full bg-gold-300/25 blur-3xl"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_0%,rgba(15,110,90,0.08),transparent)]"></div>
+      </div>
+
+      <div class="mx-auto max-w-7xl px-6 pt-16 pb-20 lg:pt-24 lg:pb-28">
+        <div class="grid items-center gap-14 lg:grid-cols-2">
+          <!-- Copy -->
+          <div class="reveal">
+            <span class="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white/70 px-4 py-1.5 text-sm font-medium text-brand-700 shadow-soft backdrop-blur">
+              <span class="inline-block h-1.5 w-1.5 rounded-full bg-gold-500"></span>
+              <span data-i18n="hero.badge">Trusted valuations · Paid the same day</span>
+            </span>
+
+            <h1 class="mt-6 font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-6xl">
+              <span data-i18n="hero.title1">Turn Your Valuables Into</span>
+              <span class="relative whitespace-nowrap">
+                <span class="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent" data-i18n="hero.title2">Instant Cash</span>
+              </span>
+            </h1>
+
+            <p class="mt-6 max-w-xl text-lg leading-relaxed text-ink/70" data-i18n="hero.sub">
+              Need money urgently? Cash4Value buys the things you already own — quickly, fairly, and with complete transparency. Share a few details and receive a no-obligation offer, often within the hour.
+            </p>
+
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a href="#contact" class="group inline-flex items-center gap-2 rounded-xl bg-brand-700 px-6 py-3.5 text-base font-semibold text-white shadow-lift transition hover:bg-brand-800 hover:-translate-y-0.5">
+                <span data-i18n="hero.sell">Sell an Item</span>
+                <svg class="h-5 w-5 transition group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
+              </a>
+              <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-ink/15 bg-white/70 px-6 py-3.5 text-base font-semibold text-ink shadow-soft backdrop-blur transition hover:border-brand-300 hover:-translate-y-0.5" data-i18n="hero.contact">
+                Contact Us
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal relative" style="--delay:120ms">
+            <div class="relative mx-auto max-w-md">
+              <div class="absolute -left-6 -top-6 hidden sm:flex items-center gap-3 rounded-2xl border border-white/60 bg-white/80 px-4 py-3 shadow-lift backdrop-blur-xl animate-float">
+                <span class="grid h-9 w-9 place-items-center rounded-lg bg-brand-100 text-brand-700">
+                  <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </span>
+                <div>
+                  <p class="text-sm font-semibold text-ink" data-i18n="hero.float.accepted">Offer accepted</p>
+                  <p class="text-xs text-ink/50" data-i18n="hero.float.paid">Paid in minutes</p>
+                </div>
+              </div>
+
+              <div class="rounded-4xl border border-white/60 bg-gradient-to-b from-white/90 to-white/70 p-6 shadow-lift backdrop-blur-xl">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="grid h-9 w-9 place-items-center rounded-xl bg-brand-800">
+                      <svg viewBox="0 0 32 32" class="h-5 w-5" aria-hidden="true"><path d="M16 6l8 4.5v6.8c0 4.8-3.4 8-8 9.2-4.6-1.2-8-4.4-8-9.2v-6.8z" fill="none" stroke="#D9B676" stroke-width="2"/><path d="M11.5 16.5l3 3 5.5-6.2" fill="none" stroke="#D9B676" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <span class="font-display text-sm font-bold" data-i18n="hero.card.title">Your Valuation</span>
+                  </div>
+                  <span class="rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700" data-i18n="hero.card.live">Live</span>
+                </div>
+
+                <div class="mt-6 rounded-2xl bg-brand-900 p-5 text-white">
+                  <p class="text-xs uppercase tracking-widest text-brand-200" data-i18n="hero.card.est">Estimated offer</p>
+                  <p class="mt-1 font-display text-4xl font-extrabold">$1,240<span class="text-gold-400">.00</span></p>
+                  <div class="mt-4 h-2 w-full overflow-hidden rounded-full bg-white/15">
+                    <div class="h-full w-[82%] rounded-full bg-gradient-to-r from-gold-400 to-gold-300"></div>
+                  </div>
+                  <p class="mt-2 text-xs text-brand-200" data-i18n="hero.card.fair">Fair market value · 82% of retail</p>
+                </div>
+
+                <ul class="mt-5 space-y-3 text-sm">
+                  <li class="flex items-center justify-between rounded-xl bg-canvas px-4 py-3">
+                    <span class="text-ink/70" data-i18n="hero.card.item">Item</span><span class="font-semibold" data-i18n="hero.card.itemVal">Luxury Watch</span>
+                  </li>
+                  <li class="flex items-center justify-between rounded-xl bg-canvas px-4 py-3">
+                    <span class="text-ink/70" data-i18n="hero.card.cond">Condition</span><span class="font-semibold text-brand-700" data-i18n="hero.card.condVal">Excellent</span>
+                  </li>
+                  <li class="flex items-center justify-between rounded-xl bg-canvas px-4 py-3">
+                    <span class="text-ink/70" data-i18n="hero.card.payout">Payout</span><span class="font-semibold" data-i18n="hero.card.payoutVal">Same day</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="absolute -bottom-5 -right-4 hidden sm:block rounded-2xl border border-white/60 bg-gold-400/90 px-4 py-3 text-brand-900 shadow-glow animate-float" style="animation-delay:-2s">
+                <p class="text-xs font-bold uppercase tracking-wide" data-i18n="hero.float.noOblig">No obligation</p>
+                <p class="text-sm font-semibold" data-i18n="hero.float.decline">Decline anytime</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST STRIP ============ -->
+    <section class="border-y border-ink/5 bg-white/50">
+      <div class="mx-auto max-w-7xl px-6 py-8">
+        <div class="grid grid-cols-2 gap-6 text-center sm:grid-cols-4">
+          <div class="reveal flex flex-col items-center gap-2">
+            <svg class="h-6 w-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <p class="text-sm font-medium text-ink/70" data-i18n="trust.secure">Verified &amp; Secure</p>
+          </div>
+          <div class="reveal flex flex-col items-center gap-2" style="--delay:80ms">
+            <svg class="h-6 w-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <p class="text-sm font-medium text-ink/70" data-i18n="trust.payout">Same-Day Payouts</p>
+          </div>
+          <div class="reveal flex flex-col items-center gap-2" style="--delay:160ms">
+            <svg class="h-6 w-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3v6c0 5-3.5 8-9 9-5.5-1-9-4-9-9V6z"/></svg>
+            <p class="text-sm font-medium text-ink/70" data-i18n="trust.confidential">Confidential Process</p>
+          </div>
+          <div class="reveal flex flex-col items-center gap-2" style="--delay:240ms">
+            <svg class="h-6 w-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 12v-2m0-6a9 9 0 100-.001z"/></svg>
+            <p class="text-sm font-medium text-ink/70" data-i18n="trust.fair">Fair Market Pricing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section id="how" class="py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="text-sm font-semibold uppercase tracking-widest text-brand-600" data-i18n="how.eyebrow">How it works</span>
+          <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="how.title">Cash in three simple steps</h2>
+          <p class="mt-4 text-lg text-ink/60" data-i18n="how.sub">No queues, no pressure, no jargon. Just a clear, dignified process designed around you.</p>
+        </div>
+
+        <div class="mt-16 grid gap-6 md:grid-cols-3">
+          <div class="reveal group relative rounded-4xl border border-ink/5 bg-white p-8 shadow-soft transition hover:shadow-lift hover:-translate-y-1">
+            <div class="flex items-center justify-between">
+              <span class="grid h-14 w-14 place-items-center rounded-2xl bg-brand-50 text-brand-700 transition group-hover:bg-brand-700 group-hover:text-white">
+                <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a8 8 0 01-11.3 7.3L3 21l1.7-6.7A8 8 0 1121 12z"/></svg>
+              </span>
+              <span class="font-display text-5xl font-extrabold text-brand-100">01</span>
+            </div>
+            <h3 class="mt-6 font-display text-xl font-bold" data-i18n="how.s1.title">Contact Us</h3>
+            <p class="mt-2 text-ink/60" data-i18n="how.s1.desc">Reach out through our simple form. It takes less than a minute to get started.</p>
+          </div>
+
+          <div class="reveal group relative rounded-4xl border border-ink/5 bg-white p-8 shadow-soft transition hover:shadow-lift hover:-translate-y-1" style="--delay:120ms">
+            <div class="flex items-center justify-between">
+              <span class="grid h-14 w-14 place-items-center rounded-2xl bg-brand-50 text-brand-700 transition group-hover:bg-brand-700 group-hover:text-white">
+                <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              </span>
+              <span class="font-display text-5xl font-extrabold text-brand-100">02</span>
+            </div>
+            <h3 class="mt-6 font-display text-xl font-bold" data-i18n="how.s2.title">Share the Details</h3>
+            <p class="mt-2 text-ink/60" data-i18n="how.s2.desc">Tell us about your item — a few photos and a short description are all we need to evaluate it.</p>
+          </div>
+
+          <div class="reveal group relative rounded-4xl border border-ink/5 bg-white p-8 shadow-soft transition hover:shadow-lift hover:-translate-y-1" style="--delay:240ms">
+            <div class="flex items-center justify-between">
+              <span class="grid h-14 w-14 place-items-center rounded-2xl bg-brand-50 text-brand-700 transition group-hover:bg-brand-700 group-hover:text-white">
+                <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2m2-6h-4a2 2 0 00-2 2v0a2 2 0 002 2h4a1 1 0 001-1v-2a1 1 0 00-1-1z"/></svg>
+              </span>
+              <span class="font-display text-5xl font-extrabold text-brand-100">03</span>
+            </div>
+            <h3 class="mt-6 font-display text-xl font-bold" data-i18n="how.s3.title">Get an Offer &amp; Get Paid</h3>
+            <p class="mt-2 text-ink/60" data-i18n="how.s3.desc">Accept our fair, no-obligation offer and receive your cash quickly — often the very same day.</p>
+          </div>
+        </div>
+
+        <div class="reveal mt-12 text-center">
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-brand-700 px-6 py-3.5 font-semibold text-white shadow-lift transition hover:bg-brand-800 hover:-translate-y-0.5">
+            <span data-i18n="how.cta">Start Your Valuation</span>
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT WE BUY ============ -->
+    <section id="what-we-buy" class="relative py-20 lg:py-28 bg-gradient-to-b from-brand-50/40 to-transparent">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="text-sm font-semibold uppercase tracking-widest text-brand-600" data-i18n="buy.eyebrow">What we buy</span>
+          <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="buy.title">A wide range of valuables welcome</h2>
+          <p class="mt-4 text-lg text-ink/60" data-i18n="buy.sub">These are examples of the categories we accept — not products for sale. If you own it and it holds value, we'll happily take a look.</p>
+        </div>
+
+        <div class="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          <article class="reveal category-card group">
+            <span class="cat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></span>
+            <h3 data-i18n="cat.electronics">Electronics</h3>
+            <p data-i18n="catd.electronics">Tablets, TVs, audio &amp; smart devices</p>
+          </article>
+          <article class="reveal category-card group" style="--delay:60ms">
+            <span class="cat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.5 7.1 18.2l.9-5.5-4-3.9L9.5 8z"/></svg></span>
+            <h3 data-i18n="cat.gold">Gold &amp; Jewelry</h3>
+            <p data-i18n="catd.gold">Ornaments, silver &amp; fine pieces</p>
+          </article>
+          <article class="reveal category-card group" style="--delay:120ms">
+            <span class="cat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l2.5 1.5M8 3l-1 3m10-3l1 3M12 21a7 7 0 100-14 7 7 0 000 14z"/></svg></span>
+            <h3 data-i18n="cat.watches">Luxury Watches</h3>
+            <p data-i18n="catd.watches">Designer &amp; premium timepieces</p>
+          </article>
+          <article class="reveal category-card group" style="--delay:180ms">
+            <span class="cat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></span>
+            <h3 data-i18n="cat.laptops">Laptops</h3>
+            <p data-i18n="catd.laptops">Ultrabooks, MacBooks &amp; PCs</p>
+          </article>
+          <article class="reveal category-card group" style="--delay:60ms">
+            <span class="cat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M7 4h10a2 2 0 012 2v12a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2zm5 13h.01"/></svg></span>
+            <h3 data-i18n="cat.smartphones">Smartphones</h3>
+            <p data-i18n="catd.smartphones">All major brands &amp; models</p>
+          </article>
+          <article class="reveal category-card group" style="--delay:120ms">
+            <span class="cat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h3l1.5-2h7L17 7h3a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V8a1 1 0 011-1zm8 3a4 4 0 100 8 4 4 0 000-8z"/></svg></span>
+            <h3 data-i18n="cat.cameras">Cameras</h3>
+            <p data-i18n="catd.cameras">DSLR, mirrorless &amp; lenses</p>
+          </article>
+          <article class="reveal category-card group" style="--delay:180ms">
+            <span class="cat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9h12a3 3 0 013 3v0a3 3 0 01-3 3l-1.5-2h-9L6 15a3 3 0 01-3-3v0a3 3 0 013-3zm2 2v2m-1-1h2m7 0h.01M17 12h.01"/></svg></span>
+            <h3 data-i18n="cat.gaming">Gaming</h3>
+            <p data-i18n="catd.gaming">Consoles &amp; premium accessories</p>
+          </article>
+          <article class="reveal category-card group" style="--delay:240ms">
+            <span class="cat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v10H4zM2 20h20M8 10h.01M12 10h.01"/></svg></span>
+            <h3 data-i18n="cat.appliances">Appliances</h3>
+            <p data-i18n="catd.appliances">Premium home &amp; kitchen goods</p>
+          </article>
+          <article class="reveal category-card group" style="--delay:60ms">
+            <span class="cat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18V5l12-2v13M9 18a3 3 0 11-6 0 3 3 0 016 0zm12-2a3 3 0 11-6 0 3 3 0 016 0z"/></svg></span>
+            <h3 data-i18n="cat.music">Musical Instruments</h3>
+            <p data-i18n="catd.music">Guitars, keyboards &amp; more</p>
+          </article>
+          <article class="reveal category-card group" style="--delay:120ms">
+            <span class="cat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14l-1 12H6zM9 8V6a3 3 0 016 0v2"/></svg></span>
+            <h3 data-i18n="cat.collectibles">Collectibles</h3>
+            <p data-i18n="catd.collectibles">Rare items &amp; fine memorabilia</p>
+          </article>
+          <article class="reveal category-card group" style="--delay:180ms">
+            <span class="cat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 4.5v9L12 21l-8-4.5v-9zM12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></span>
+            <h3 data-i18n="cat.luxury">Luxury Items</h3>
+            <p data-i18n="catd.luxury">Designer bags &amp; premium goods</p>
+          </article>
+          <article class="reveal category-card group is-more" style="--delay:240ms">
+            <a href="#contact" class="flex h-full flex-col items-start justify-center">
+              <span class="cat-icon !bg-brand-700 !text-white"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg></span>
+              <h3 class="text-white" data-i18n="cat.more">And More…</h3>
+              <p class="text-brand-100" data-i18n="catd.more">Don't see it? Just ask us.</p>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section id="why" class="py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="text-sm font-semibold uppercase tracking-widest text-brand-600" data-i18n="why.eyebrow">Why Cash4Value</span>
+          <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="why.title">A better way to unlock cash</h2>
+          <p class="mt-4 text-lg text-ink/60" data-i18n="why.sub">We built Cash4Value to feel less like a transaction and more like help — with the fairness and discretion you deserve.</p>
+        </div>
+
+        <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="reveal feature-card">
+            <span class="feat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></span>
+            <h3 data-i18n="why.1.title">Instant Cash Offers</h3>
+            <p data-i18n="why.1.desc">Get a clear offer fast — no drawn-out back-and-forth or waiting games.</p>
+          </div>
+          <div class="reveal feature-card" style="--delay:80ms">
+            <span class="feat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m-6 4h6m-6 4h4M5 21V5a2 2 0 012-2h10a2 2 0 012 2v16l-3-2-2 2-2-2-2 2-2-2z"/></svg></span>
+            <h3 data-i18n="why.2.title">Fair Market Valuation</h3>
+            <p data-i18n="why.2.desc">Transparent pricing based on real market data — never lowball tactics.</p>
+          </div>
+          <div class="reveal feature-card" style="--delay:160ms">
+            <span class="feat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
+            <h3 data-i18n="why.3.title">Fast Response</h3>
+            <p data-i18n="why.3.desc">We reply quickly because we know urgent means urgent.</p>
+          </div>
+          <div class="reveal feature-card" style="--delay:240ms">
+            <span class="feat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
+            <h3 data-i18n="why.4.title">Trusted Service</h3>
+            <p data-i18n="why.4.desc">Thousands helped with a process people genuinely recommend.</p>
+          </div>
+          <div class="reveal feature-card" style="--delay:80ms">
+            <span class="feat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></span>
+            <h3 data-i18n="why.5.title">Secure Transactions</h3>
+            <p data-i18n="why.5.desc">Your details and your payment are handled safely, every step.</p>
+          </div>
+          <div class="reveal feature-card" style="--delay:160ms">
+            <span class="feat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12h4l3 8 4-16 3 8h4"/></svg></span>
+            <h3 data-i18n="why.6.title">Transparent Process</h3>
+            <p data-i18n="why.6.desc">No hidden fees, no surprises — you'll always know where you stand.</p>
+          </div>
+          <div class="reveal feature-card" style="--delay:240ms">
+            <span class="feat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+            <h3 data-i18n="why.7.title">Hassle-Free</h3>
+            <p data-i18n="why.7.desc">Skip the queues and paperwork. We keep it refreshingly simple.</p>
+          </div>
+          <div class="reveal feature-card" style="--delay:320ms">
+            <span class="feat-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM4 21v-1a6 6 0 0112 0v1"/></svg></span>
+            <h3 data-i18n="why.8.title">Personalized Help</h3>
+            <p data-i18n="why.8.desc">A real person guides you — with patience, warmth, and respect.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="py-20 lg:py-28">
+      <div class="mx-auto max-w-3xl px-6">
+        <div class="reveal text-center">
+          <span class="text-sm font-semibold uppercase tracking-widest text-brand-600" data-i18n="faq.eyebrow">FAQ</span>
+          <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="faq.title">Questions, answered</h2>
+          <p class="mt-4 text-lg text-ink/60" data-i18n="faq.sub">Everything you need to know before reaching out.</p>
+        </div>
+
+        <div class="reveal mt-12 space-y-4" id="faqList">
+          <details class="faq-item">
+            <summary><span data-i18n="faq.q1">What items do you buy?</span><span class="faq-plus"></span></summary>
+            <div class="faq-body"><p data-i18n="faq.a1">A broad range of valuables — including electronics, gold and silver, jewelry, luxury watches, laptops, smartphones, cameras, gaming gear, appliances, musical instruments, collectibles, and more. If you're unsure, just ask; we're happy to take a look.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span data-i18n="faq.q2">How quickly will I receive payment?</span><span class="faq-plus"></span></summary>
+            <div class="faq-body"><p data-i18n="faq.a2">Most offers are made within the hour, and once you accept, we aim to pay you the same day. Timing can vary slightly depending on the item and your preferred payment method.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span data-i18n="faq.q3">Is there any obligation?</span><span class="faq-plus"></span></summary>
+            <div class="faq-body"><p data-i18n="faq.a3">None at all. Our valuations are completely free and no-obligation. You're welcome to decline any offer with no cost and no pressure.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span data-i18n="faq.q4">How is the item's value determined?</span><span class="faq-plus"></span></summary>
+            <div class="faq-body"><p data-i18n="faq.a4">We assess current market demand, the item's condition, brand, model, and comparable sales. We'll always explain how we reached your offer so it's fully transparent.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span data-i18n="faq.q5">Do you purchase damaged items?</span><span class="faq-plus"></span></summary>
+            <div class="faq-body"><p data-i18n="faq.a5">Often, yes. Many items still hold value even with wear or damage. Share a few honest photos and we'll let you know what we can offer.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span data-i18n="faq.q6">Can you help me find an item to buy?</span><span class="faq-plus"></span></summary>
+            <div class="faq-body"><p data-i18n="faq.a6">Absolutely. Tell us what you're looking for and we'll source it through our trusted network. Just choose "Looking to Buy" in the contact form below.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / LEAD FORM ============ -->
+    <section id="contact" class="relative py-20 lg:py-28">
+      <div class="pointer-events-none absolute inset-0 -z-10">
+        <div class="absolute bottom-0 left-1/2 h-80 w-[40rem] -translate-x-1/2 rounded-full bg-brand-200/30 blur-3xl"></div>
+      </div>
+
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="grid gap-10 lg:grid-cols-5">
+          <div class="reveal lg:col-span-2">
+            <span class="text-sm font-semibold uppercase tracking-widest text-brand-600" data-i18n="contact.eyebrow">Get started</span>
+            <h2 class="mt-3 font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
+              <span data-i18n="contact.title1">Need Cash Urgently?</span><br><span class="text-brand-600" data-i18n="contact.title2">Contact Cash4Value today.</span>
+            </h2>
+            <p class="mt-4 text-lg text-ink/60" data-i18n="contact.sub">Fill out the form and we'll get back to you fast with a fair, no-obligation offer.</p>
+
+            <div class="mt-8 space-y-4">
+              <div class="flex items-center gap-3 rounded-2xl bg-brand-50 p-4 text-sm text-brand-800">
+                <svg class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg>
+                <span data-i18n="contact.privacy">Your information stays private and is never shared. Confidential, always.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal lg:col-span-3" style="--delay:120ms">
+            <form id="leadForm" novalidate class="rounded-4xl border border-white/50 bg-white/80 p-6 shadow-lift backdrop-blur-xl sm:p-8">
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div class="field">
+                  <label for="fullName"><span data-i18n="form.fullName">Full Name</span> <span class="req">*</span></label>
+                  <input id="fullName" name="fullName" type="text" autocomplete="name" required placeholder="Jane Doe" data-i18n-ph="form.ph.fullName" />
+                  <span class="error" data-for="fullName"></span>
+                </div>
+                <div class="field">
+                  <label for="mobile"><span data-i18n="form.mobile">Mobile Number</span> <span class="req">*</span></label>
+                  <input id="mobile" name="mobile" type="tel" autocomplete="tel" required placeholder="+1 800 555 0199" data-i18n-ph="form.ph.mobile" />
+                  <span class="error" data-for="mobile"></span>
+                </div>
+                <div class="field">
+                  <label for="email" data-i18n="form.email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@email.com" data-i18n-ph="form.ph.email" />
+                  <span class="error" data-for="email"></span>
+                </div>
+                <div class="field">
+                  <label for="city" data-i18n="form.city">City</label>
+                  <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="Your city" data-i18n-ph="form.ph.city" />
+                </div>
+
+                <div class="field sm:col-span-2">
+                  <label><span data-i18n="form.intent">What would you like to do?</span> <span class="req">*</span></label>
+                  <div class="mt-1 grid grid-cols-2 gap-3">
+                    <label class="choice">
+                      <input type="radio" name="intent" value="Sell an Item" checked />
+                      <span class="choice-box">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 12v-2"/></svg>
+                        <span data-i18n="form.sell">Sell an Item</span>
+                      </span>
+                    </label>
+                    <label class="choice">
+                      <input type="radio" name="intent" value="Looking to Buy" />
+                      <span class="choice-box">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                        <span data-i18n="form.buy">Looking to Buy</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="category" data-i18n="form.category">Item Category</label>
+                  <select id="category" name="category">
+                    <option value="" data-i18n="form.selectCat">Select a category</option>
+                    <option data-i18n="cat.electronics">Electronics</option>
+                    <option data-i18n="cat.gold">Gold &amp; Jewelry</option>
+                    <option data-i18n="cat.watches">Luxury Watches</option>
+                    <option data-i18n="cat.laptops">Laptops</option>
+                    <option data-i18n="cat.smartphones">Smartphones</option>
+                    <option data-i18n="cat.cameras">Cameras</option>
+                    <option data-i18n="cat.gaming">Gaming</option>
+                    <option data-i18n="cat.appliances">Appliances</option>
+                    <option data-i18n="cat.music">Musical Instruments</option>
+                    <option data-i18n="cat.collectibles">Collectibles</option>
+                    <option data-i18n="cat.luxury">Luxury Items</option>
+                    <option data-i18n="form.other">Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="price"><span data-i18n="form.price">Expected Price</span> <span class="opt" data-i18n="form.optional">(optional)</span></label>
+                  <input id="price" name="price" type="text" inputmode="numeric" placeholder="e.g. $500" data-i18n-ph="form.ph.price" />
+                </div>
+
+                <div class="field sm:col-span-2">
+                  <label for="description" data-i18n="form.description">Brief Description</label>
+                  <textarea id="description" name="description" rows="3" placeholder="Tell us about the item — brand, model, condition, or what you're looking for." data-i18n-ph="form.ph.description"></textarea>
+                </div>
+
+                <div class="field sm:col-span-2">
+                  <label for="contactMethod" data-i18n="form.contactMethod">Preferred Contact Method</label>
+                  <select id="contactMethod" name="contactMethod">
+                    <option data-i18n="form.cm.phone">Phone Call</option>
+                    <option data-i18n="form.cm.whatsapp">Text / WhatsApp</option>
+                    <option data-i18n="form.cm.email">Email</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="mt-7 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 px-6 py-4 text-base font-semibold text-white shadow-lift transition hover:bg-brand-800 hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-brand-300">
+                <span class="btn-label" data-i18n="form.submit">Get My Free Offer</span>
+                <svg class="btn-arrow h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
+                <svg class="btn-spinner hidden h-5 w-5 animate-spin" viewBox="0 0 24 24" fill="none"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4z"/></svg>
+              </button>
+              <p class="mt-3 text-center text-xs text-ink/40" data-i18n="form.disclaimer">By submitting, you agree to be contacted about your request. No spam, ever.</p>
+
+              <div id="formSuccess" class="hidden mt-6 rounded-2xl border border-brand-200 bg-brand-50 p-5 text-center">
+                <div class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-brand-600 text-white">
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <h3 class="mt-3 font-display text-lg font-bold text-brand-800" data-i18n="form.successTitle">Thank you — we've got it!</h3>
+                <p class="mt-1 text-sm text-brand-700" data-i18n="form.successDesc">A Cash4Value specialist will reach out to you shortly with your offer.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA BANNER ============ -->
+    <section class="px-6 pb-20">
+      <div class="reveal mx-auto max-w-7xl overflow-hidden rounded-4xl bg-gradient-to-br from-brand-800 to-brand-600 p-10 text-center shadow-lift sm:p-16">
+        <h2 class="font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl" data-i18n="cta.title">Need cash urgently? We're ready to help.</h2>
+        <p class="mx-auto mt-4 max-w-xl text-lg text-brand-100" data-i18n="cta.sub">Get a fair, no-obligation offer today and turn what you own into the cash you need — with dignity and speed.</p>
+        <a href="#contact" class="mt-8 inline-flex items-center gap-2 rounded-xl bg-gold-400 px-8 py-4 text-base font-semibold text-brand-900 shadow-glow transition hover:bg-gold-300 hover:-translate-y-0.5">
+          <span data-i18n="cta.btn">Contact Cash4Value Today</span>
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-ink/5 bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div class="lg:col-span-1">
+          <a href="#" class="flex items-center gap-2.5" aria-label="Cash4Value home">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-brand-800">
+              <svg viewBox="0 0 32 32" class="h-6 w-6" aria-hidden="true"><path d="M16 6l8 4.5v6.8c0 4.8-3.4 8-8 9.2-4.6-1.2-8-4.4-8-9.2v-6.8z" fill="none" stroke="#D9B676" stroke-width="2"/><path d="M11.5 16.5l3 3 5.5-6.2" fill="none" stroke="#D9B676" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="font-display text-xl font-extrabold tracking-tight">Cash<span class="text-brand-600">4</span>Value</span>
+          </a>
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-ink/60" data-i18n="footer.about">
+            Helping people unlock the value of what they own — quickly, fairly, and with respect. A trusted partner in urgent moments.
+          </p>
+          <div class="mt-5 flex items-center gap-3">
+            <a href="#" aria-label="Facebook" class="social"><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5A3.5 3.5 0 0114 6h2v3h-2c-.5 0-1 .5-1 1v2h3l-.5 3H13v7A10 10 0 0022 12z"/></svg></a>
+            <a href="#" aria-label="Instagram" class="social"><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 0 4.1.1 1 0 1.7.2 2.3.5.6.2 1.1.5 1.6 1s.8 1 1 1.6c.3.6.4 1.3.5 2.3.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.7-.5 2.3-.2.6-.5 1.1-1 1.6s-1 .8-1.6 1c-.6.3-1.3.4-2.3.5-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.7-.2-2.3-.5-.6-.2-1.1-.5-1.6-1s-.8-1-1-1.6c-.3-.6-.4-1.3-.5-2.3C2 15 2 14.7 2 12s0-3 .1-4.1c0-1 .2-1.7.5-2.3.2-.6.5-1.1 1-1.6s1-.8 1.6-1c.6-.3 1.3-.4 2.3-.5C9 2 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM17.8 6.9a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg></a>
+            <a href="#" aria-label="X" class="social"><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.9 2H22l-7.5 8.6L23 22h-6.8l-5-6.6L5.4 22H2.3l8-9.2L1.5 2h7l4.5 6zM17 20.1h1.7L7.1 3.8H5.3z"/></svg></a>
+            <a href="#" aria-label="LinkedIn" class="social"><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 002.5 6a2.5 2.5 0 005 0 2.5 2.5 0 00-2.52-2.5zM3 8.98h4V21H3zM9.5 8.98h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4 0 4.75 2.64 4.75 6.08V21h-4v-5.34c0-1.27 0-2.9-1.77-2.9s-2 1.38-2 2.8V21h-4z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading" data-i18n="footer.quick">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#how" data-i18n="nav.how">How It Works</a></li>
+            <li><a href="#what-we-buy" data-i18n="nav.what">What We Buy</a></li>
+            <li><a href="#why" data-i18n="footer.whyLink">Why Choose Us</a></li>
+            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading" data-i18n="footer.services">Services</h3>
+          <ul class="footer-links">
+            <li><a href="#contact" data-i18n="footer.sell">Sell Your Items</a></li>
+            <li><a href="#contact" data-i18n="footer.freeVal">Free Valuation</a></li>
+            <li><a href="#contact" data-i18n="footer.sameDay">Same-Day Payout</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading" data-i18n="footer.touch">Get in Touch</h3>
+          <ul class="footer-links">
+            <li class="text-ink/60" data-i18n="footer.hours">Available Mon–Sat · 8am–8pm</li>
+            <li class="text-ink/60" data-i18n="footer.fast">Fast, confidential responses</li>
+          </ul>
+          <a href="#contact" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-brand-700 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-800">
+            <span data-i18n="footer.getOffer">Get an Offer</span>
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-ink/5 pt-8 text-sm text-ink/50 sm:flex-row">
+        <p>© <span id="year"></span> Cash4Value. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-brand-700 transition" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="#" class="hover:text-brand-700 transition" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCROLL TO TOP ============ -->
+  <button id="toTop" aria-label="Scroll to top" class="fixed bottom-6 right-6 z-40 grid h-12 w-12 translate-y-4 place-items-center rounded-full bg-brand-800 text-white opacity-0 shadow-lift transition-all duration-300 hover:bg-brand-900">
+    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
